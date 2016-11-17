@@ -19,7 +19,7 @@ var main = function () {
             error: function (error) {
                 console.log(error);
             },
-            //dataType: 'jsonp',
+            dataType: 'jsonp',
             headers: {
                 "Access-Control-Allow-Origin": "*"
             },
