@@ -11,7 +11,7 @@ var main = function () {
             });*/
 
 
-        /*$.ajax({
+        $.ajax({
             url: 'https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395',
             data: {
                 format: 'json'
@@ -35,10 +35,10 @@ var main = function () {
             },
 
             type: 'GET'
-        });*/
+        });
 
 
-        $.ajax({
+        /*$.ajax({
             method: "GET",
             url: "https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395",
             headers: {
@@ -61,10 +61,10 @@ var main = function () {
                 var condition = data.currently.summary;
                 console.log(condition);
                 $("#currentCondition").text(condition);
-            }
-            //$.get("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395", function (data) {
-            //console.log(data);
-            //});
+            };*/
+        //$.get("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395", function (data) {
+        //console.log(data);
+        //});
 
         /*$.getJSON("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395",
             function (data) {
