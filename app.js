@@ -38,7 +38,7 @@ var main = function () {
         });*/
 
 
-        /*$.ajax({
+        $.ajax({
             method: "GET",
             url: "https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395",
             headers: {
@@ -53,26 +53,26 @@ var main = function () {
         });
 
         var successCallback = function (data) {
-            alert("success");
-            var temp = data.currently.temperature;
-            console.log(temp);
-            $("#currentTemp").text(temp + " °F");
+                alert("success");
+                var temp = data.currently.temperature;
+                console.log(temp);
+                $("#currentTemp").text(temp + " °F");
 
-            var condition = data.currently.summary;
-            console.log(condition);
-            $("#currentCondition").text(condition);
-        }*/
-        //$.get("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395", function (data) {
-        //console.log(data);
-        //});
+                var condition = data.currently.summary;
+                console.log(condition);
+                $("#currentCondition").text(condition);
+            }
+            //$.get("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395", function (data) {
+            //console.log(data);
+            //});
 
-        $.getJSON("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395",
+        /*$.getJSON("https://api.darksky.net/forecast/b581b5c0fc48b3c8bafb217daf3096c1/35.4420477,-88.637395",
             function (data) {
                 alert("test");
                 var temp = data.currently.temperature;
                 console.log(temp);
                 $("#currentTemp").text(temp + " °F");
-            });
+            });*/
     });
 }
 
